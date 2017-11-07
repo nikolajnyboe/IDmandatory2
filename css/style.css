@@ -51,7 +51,8 @@ body {
   color: black;
   font-family: 'Raleway';
   background-color: #FDECE4;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  fill: currentColor; }
 
 nav {
   margin: 0;
