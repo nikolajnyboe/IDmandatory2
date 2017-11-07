@@ -56,29 +56,4 @@ input:focus {
 }
 
 @import 'compare';
-
-.card-login {
-	max-width: 400px;
-	height: auto;
-
-	input {
-		width: 100%;
-		margin-bottom: 15px;
-		border: 1px solid $black;
-		padding: 10px;
-		color: $black;
-
-		&::placeholder {
-			color: $black;
-			font-family: "NordeaSansSmall-Regular";
-		}
-	}
-	.btn-login {
-		width: 100%;
-		margin-bottom: 25px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-}
+@import 'login';
