@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'NordeaSansSmall-Regular';
+  src: url("../fonts/NordeaSansSmall-Regular.woff"), url("../fonts/NordeaSansSmall-Regular.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansSmall-Italic';
+  src: url("../fonts/NordeaSansSmall-Italic.woff"), url("../fonts/NordeaSansSmall-Italic.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansSmall-Light';
+  src: url("../fonts/NordeaSansSmall-Light.woff"), url("../fonts/NordeaSansSmall-Light.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansSmall-Medium';
+  src: url("../fonts/NordeaSansSmall-Medium.woff"), url("../fonts/NordeaSansSmall-Medium.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansSmall-Bold';
+  src: url("../fonts/NordeaSansSmall-Bold.woff"), url("../fonts/NordeaSansSmall-Bold.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansSmall-Bolditalic';
+  src: url("../fonts/NordeaSansSmall-Bolditalic.woff"), url("../fonts/NordeaSansSmall-Bolditalic.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansLarge-Regular';
+  src: url("../fonts/NordeaSansSmall-Regular.woff"), url("../fonts/NordeaSansSmall-Regular.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansLarge-Italic';
+  src: url("../fonts/NordeaSansSmall-Italic.woff"), url("../fonts/NordeaSansSmall-Italic.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansLarge-Light';
+  src: url("../fonts/NordeaSansSmall-Light.woff"), url("../fonts/NordeaSansSmall-Light.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansLarge-Medium';
+  src: url("../fonts/NordeaSansSmall-Medium.woff"), url("../fonts/NordeaSansSmall-Medium.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansLarge-Bold';
+  src: url("../fonts/NordeaSansSmall-Bold.woff"), url("../fonts/NordeaSansSmall-Bold.woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: 'NordeaSansLarge-Bolditalic';
+  src: url("../fonts/NordeaSansSmall-Bolditalic.woff"), url("../fonts/NordeaSansSmall-Bolditalic.woff2");
+  font-weight: normal; }
+body {
+  margin: 0;
+  color: black;
+  font-family: 'Raleway';
+  background-color: beige;
+  box-sizing: border-box; }
+
+nav {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: #0000a0; }
+
+.wrapper {
+  height: auto; }
+
+input {
+  border-radius: 10px;
+  padding: 5px; }
+
+input:focus {
+  outline-width: 0; }
+
+#logo {
+  height: 100px; }
+
+.btnMenuButton {
+  display: flex;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+.btnMenuButton:hover {
+  background-color: 0000af; }
+
+.btnMenuSearchbar {
+  display: flex;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */
