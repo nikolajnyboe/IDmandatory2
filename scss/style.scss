@@ -1,67 +1,7 @@
 @import 'vars';
-@import 'buttons';
 @import 'utils';
-
-body {
-	color: black;
-	font-family: NordeaSansSmall-Medium;
-	background-color: $nordea-pink;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
-h1, h2, h3, h4 {
-	font-family: NordeaSansLarge-Bold;
-}
-
-h1, h2 {
-	color: $nordea-blue;
-}
-
-h1 {
-	margin-bottom: 2rem;
-}
-
-ul {
-	padding-left: 20px;
-}
-
-svg {
-	fill: currentColor;
-}
-
-.icon-outline {
-	fill: none;
-	stroke: currentColor;
-	stroke-width: 2;
-}
-
-nav {
-	margin: 0;
-	display: flex;
-	flex-direction: row;
-	width:100%;
-	height:auto;
-	color: $white;
-	background-color: $nordea-blue;
-}
-
-input {
-	border-radius: 8px;
-	padding: 5px;
-}
-
-input:focus {
-    outline-width: 0;
-}
-
-#logo {
-	height: 100px;
-}
-
-.container {
-	padding: 30px;
-}
-
+@import 'buttons';
+@import 'fontstyle';
+@import 'header';
 @import 'compare';
 @import 'login';
