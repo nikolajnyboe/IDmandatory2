@@ -4,8 +4,26 @@
 
 body {
 	color: black;
-	font-family: 'Raleway';
+	font-family: NordeaSansSmall-Medium;
 	background-color: $nordea-pink;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+	font-family: NordeaSansLarge-Bold;
+}
+
+h1, h2 {
+	color: $nordea-blue;
+}
+
+h1 {
+	margin-bottom: 2rem;
+}
+
+ul {
+	padding-left: 20px;
 }
 
 svg {
@@ -42,7 +60,7 @@ input:focus {
 }
 
 .container {
-	padding: 30px 20px;
+	padding: 30px;
 }
 
 @import 'compare';
