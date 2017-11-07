@@ -1,3 +1,10 @@
+.flex-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .card-login {
 	max-width: 400px;
 	height: auto;
@@ -11,7 +18,9 @@
 
 		&::placeholder {
 			color: $black;
-			font-family: "NordeaSansSmall-Regular";
+            font-family: "NordeaSansSmall-Regular";
+            font-size: 1rem;
+            vertical-align: middle;
 		}
 	}
 	.btn-login {
