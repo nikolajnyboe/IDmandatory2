@@ -1,12 +1,11 @@
 @import 'vars';
+@import 'buttons';
+@import 'utils';
 
 body {
-	margin:0;
 	color: black;
 	font-family: 'Raleway';
 	background-color: $nordea-pink;
-	box-sizing: border-box;
-	fill: currentColor;
 }
 
 nav {
@@ -20,7 +19,10 @@ nav {
 }
 
 .wrapper {
-	height: auto;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 input {
@@ -36,21 +38,19 @@ input:focus {
 	height: 100px;
 }
 
-.btnMenuButton {
-	display: flex;
-	width: -webkit-fill-available;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-}
+@import 'compare';
 
-.btnMenuButton:hover {
-	background-color: #0000af;
-}
-
-.btnMenuSearchbar {
-	display: flex;
-	width: -webkit-fill-available;
-	align-items: center;
-	justify-content: center;
+.card {
+	width: 400px;
+	height: auto;
+	input {
+		width: 100%;
+		margin-bottom: 15px;
+		border: 1px solid $black;
+		padding: 10px;
+		color: $black;
+	}
+	.btn-login {
+		width: 100%;
+	}
 }
