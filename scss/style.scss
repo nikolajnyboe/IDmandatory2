@@ -4,7 +4,7 @@ body {
 	margin:0;
 	color: black;
 	font-family: 'Raleway';
-	background-color: beige;
+	background-color: $nordea-pink;
 	box-sizing: border-box;
 }
 
@@ -14,8 +14,8 @@ nav {
 	flex-direction: row;
 	width:100%;
 	height:auto;
-	color: white;
-	background-color:#0000a0;
+	color: $white;
+	background-color:$nordea-blue;
 }
 
 .wrapper {
@@ -44,7 +44,7 @@ input:focus {
 }
 
 .btnMenuButton:hover {
-	background-color: 0000af;
+	background-color: #0000af;
 }
 
 .btnMenuSearchbar {
