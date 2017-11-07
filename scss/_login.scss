@@ -7,7 +7,8 @@
 
 .card-login {
 	max-width: 400px;
-	height: auto;
+    height: auto;
+    padding: 25px;
 
 	input {
 		width: 100%;
@@ -15,12 +16,11 @@
 		border: 1px solid $black;
 		padding: 10px;
 		color: $black;
+        font-family: "NordeaSansSmall-Regular";
+        font-size: 1rem;
 
 		&::placeholder {
 			color: $black;
-            font-family: "NordeaSansSmall-Regular";
-            font-size: 1rem;
-            vertical-align: middle;
 		}
 	}
 	.btn-login {
