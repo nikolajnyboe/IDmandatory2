@@ -1,5 +1,11 @@
 @import 'vars';
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
 	margin:0;
 	color: black;
@@ -19,7 +25,10 @@ nav {
 }
 
 .wrapper {
-	height: auto;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 input {
@@ -44,7 +53,7 @@ input:focus {
 }
 
 .btnMenuButton:hover {
-	background-color: #0000af;
+	background-color: $nordea-blue;
 }
 
 .btnMenuSearchbar {
@@ -55,3 +64,23 @@ input:focus {
 }
 
 @import 'compare';
+
+.card {
+	background-color: $white;
+	padding: 25px;
+	border-radius: 8px;
+	width: 400px;
+	input {
+		width: 100%;
+		margin-bottom: 15px;
+		border: 1px solid $black;
+		padding: 10px;
+		color: $black;
+	}
+	button {
+		width: 100%;
+		padding: 10px;
+		background-color: $nordea-blue;
+		color: $white;
+	}
+}
