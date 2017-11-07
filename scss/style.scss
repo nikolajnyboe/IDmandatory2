@@ -1,0 +1,55 @@
+@import 'vars';
+
+body {
+	margin:0;
+	color: black;
+	font-family: 'Raleway';
+	background-color: beige;
+	box-sizing: border-box;
+}
+
+nav {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	height:auto;
+	color: white;
+	background-color:#0000a0;
+}
+
+.wrapper {
+	height: auto;
+}
+
+input {
+	border-radius: 10px;
+	padding: 5px;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+#logo {
+	height: 100px;
+}
+
+.btnMenuButton {
+	display: flex;
+	width: -webkit-fill-available;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.btnMenuButton:hover {
+	background-color: 0000af;
+}
+
+.btnMenuSearchbar {
+	display: flex;
+	width: -webkit-fill-available;
+	align-items: center;
+	justify-content: center;
+}
