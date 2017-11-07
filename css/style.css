@@ -46,6 +46,9 @@
   font-family: 'NordeaSansLarge-Bolditalic';
   src: url("../fonts/NordeaSansSmall-Bolditalic.woff"), url("../fonts/NordeaSansSmall-Bolditalic.woff2");
   font-weight: normal; }
+.hide {
+  display: none; }
+
 * {
   padding: 0;
   margin: 0;
