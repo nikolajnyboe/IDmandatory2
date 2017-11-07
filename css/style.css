@@ -75,10 +75,24 @@
 .hide {
   display: none; }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal; }
+
 body {
   color: black;
   font-family: 'Raleway';
   background-color: #FDECE4; }
+
+svg {
+  fill: currentColor; }
+
+.icon-outline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2; }
 
 nav {
   margin: 0;
@@ -105,7 +119,7 @@ input:focus {
 #logo {
   height: 100px; }
 
-.cards__container {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px; }
@@ -113,10 +127,18 @@ input:focus {
 .card {
   position: relative;
   background-color: #ffffff;
-  height: 300px;
+  min-height: 300px;
   border-radius: 11px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 14px; }
+  padding: 14px;
+  color: #3399FF; }
+  .card > * {
+    margin-bottom: 15px;
+    font-family: NordeaSansSmall-Medium; }
+  .card h2 {
+    color: #0000A0; }
+  .card h3 {
+    font-size: 1rem; }
 
 .pill {
   position: absolute;
@@ -130,6 +152,37 @@ input:focus {
   top: 7px;
   right: 5px; }
 
+.icon-wrapper {
+  display: flex;
+  justify-content: space-around; }
+
+.icon-container {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center; }
+  .icon-container > * {
+    margin: 1px 0; }
+
+.icon-blue {
+  color: #0000A0; }
+
+.icon-small {
+  height: 1rem;
+  vertical-align: text-top; }
+
+.articlecount {
+  display: flex;
+  align-items: center; }
+  .articlecount .icon-blue {
+    margin-right: 10px; }
+  .articlecount * {
+    font-size: 1rem;
+    font-weight: normal; }
+
+.card-latest-article-text {
+  font-size: 1.5rem;
+  color: #0000A0; }
+
 .card {
   width: 400px;
   height: auto; }
@@ -142,7 +195,8 @@ input:focus {
   .card .btn-login {
     width: 100%; }
 
- /* CHART STYLE*/ 
+ 
+    /* CHART STYLE*/ 
   #container{
       display: flex;
       width: 100%;
