@@ -1,4 +1,4 @@
-.cards__container {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
@@ -7,10 +7,24 @@
 .card {
   position: relative;
   background-color: $white;
-  height: 300px;
+  min-height: 300px;
   border-radius: 11px;
   box-shadow: 1px 2px 4px rgba($black, .3);
   padding: 14px;
+  color: $nordea-lightblue;
+
+  & > * {
+    margin-bottom: 15px;
+    font-family: NordeaSansSmall-Medium;
+  }
+
+  h2 {
+    color: $nordea-blue;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 .pill {
@@ -24,4 +38,48 @@
   font-size: .7rem;
   top: 7px;
   right: 5px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  > * {
+    margin: 1px 0;
+  }
+
+  
+}
+
+.icon-blue {
+  color: $nordea-blue;
+}
+
+.icon-small {
+  height: 1rem;
+  vertical-align: text-top;
+}
+
+.articlecount {
+  display: flex;
+  align-items: center;
+
+  .icon-blue {
+    margin-right: 10px;
+  }
+
+  * {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+.card-latest-article-text {
+  font-size: 1.5rem;
+  color: $nordea-blue;
 }

@@ -2,10 +2,27 @@
 @import 'buttons';
 @import 'utils';
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-weight: normal;
+}
+
 body {
 	color: black;
 	font-family: 'Raleway';
 	background-color: $nordea-pink;
+}
+
+svg {
+	fill: currentColor;
+}
+
+.icon-outline {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
 }
 
 nav {
