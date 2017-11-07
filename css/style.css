@@ -52,7 +52,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: normal; }
 
 body {
   margin: 0;
@@ -60,6 +61,14 @@ body {
   font-family: 'Raleway';
   background-color: #FDECE4;
   box-sizing: border-box; }
+
+svg {
+  fill: currentColor; }
+
+.icon-outline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2; }
 
 nav {
   margin: 0;
@@ -102,7 +111,7 @@ input:focus {
   align-items: center;
   justify-content: center; }
 
-.cards__container {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px; }
@@ -110,10 +119,18 @@ input:focus {
 .card {
   position: relative;
   background-color: #ffffff;
-  height: 300px;
+  min-height: 300px;
   border-radius: 11px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 14px; }
+  padding: 14px;
+  color: #3399FF; }
+  .card > * {
+    margin-bottom: 15px;
+    font-family: NordeaSansSmall-Medium; }
+  .card h2 {
+    color: #0000A0; }
+  .card h3 {
+    font-size: 1rem; }
 
 .pill {
   position: absolute;
@@ -127,18 +144,49 @@ input:focus {
   top: 7px;
   right: 5px; }
 
-.card {
+.icon-wrapper {
+  display: flex;
+  justify-content: space-around; }
+
+.icon-container {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center; }
+  .icon-container > * {
+    margin: 1px 0; }
+
+.icon-blue {
+  color: #0000A0; }
+
+.icon-small {
+  height: 1rem;
+  vertical-align: text-top; }
+
+.articlecount {
+  display: flex;
+  align-items: center; }
+  .articlecount .icon-blue {
+    margin-right: 10px; }
+  .articlecount * {
+    font-size: 1rem;
+    font-weight: normal; }
+
+.card-latest-article-text {
+  font-size: 1.5rem;
+  color: #0000A0; }
+
+.card-login {
   background-color: #ffffff;
   padding: 25px;
   border-radius: 8px;
   width: 400px; }
-  .card input {
+  .card-login input {
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid #000000;
     padding: 10px;
     color: #000000; }
-  .card button {
+  .card-login button {
     width: 100%;
     padding: 10px;
     background-color: #0000A0;
