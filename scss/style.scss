@@ -41,34 +41,10 @@ input:focus {
 	height: 100px;
 }
 
-<<<<<<< HEAD
-@import 'login';
-@import 'compare';
-@import 'dashboard';
-=======
 .container {
 	padding: 30px 20px;
 }
 
-@import 'compare';
-<<<<<<< HEAD
-
-.card {
-	width: 400px;
-	height: auto;
-	input {
-		width: 100%;
-		margin-bottom: 15px;
-		border: 1px solid $black;
-		padding: 10px;
-		color: $black;
-	}
-	.btn-login {
-		width: 100%;
-	}
-}
-
-=======
 @import 'login';
->>>>>>> 53022724726291afb0adeaead824b4c7f0060cdc
->>>>>>> 223481afa48f754ea336edebc57452050823aa5c
+@import 'compare';
+@import 'dashboard';
