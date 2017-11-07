@@ -16,7 +16,7 @@
 }
 
 .btnMenuButton:hover {
-	background-color: $nordea-blue;
+	background-color: lighten($nordea-blue, 5%);
 }
 
 .btnMenuSearchbar {

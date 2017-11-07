@@ -49,17 +49,19 @@
 .btn {
   padding: 10px;
   background-color: #0000A0;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: "NordeaSansSmall-Medium"; }
 
 .btnMenuButton {
   display: flex;
   width: -webkit-fill-available;
   align-items: center;
   justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "NordeaSansSmall-Medium"; }
 
 .btnMenuButton:hover {
-  background-color: #0000A0; }
+  background-color: #0000ba; }
 
 .btnMenuSearchbar {
   display: flex;
@@ -70,16 +72,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: normal; }
 
 .hide {
   display: none; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-weight: normal; }
 
 body {
   color: black;
@@ -110,7 +107,7 @@ nav {
   align-items: center; }
 
 input {
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 5px; }
 
 input:focus {
@@ -118,6 +115,24 @@ input:focus {
 
 #logo {
   height: 100px; }
+
+.card-login {
+  max-width: 400px;
+  height: auto; }
+  .card-login input {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    padding: 10px;
+    color: #000000; }
+    .card-login input::placeholder {
+      color: #000000;
+      font-family: "NordeaSansSmall-Regular"; }
+  .card-login .btn-login {
+    width: 100%;
+    margin-bottom: 25px; }
+    .card-login .btn-login:last-child {
+      margin-bottom: 0; }
 
 .cards-container {
   display: grid;
@@ -183,16 +198,26 @@ input:focus {
   font-size: 1.5rem;
   color: #0000A0; }
 
-.card {
-  width: 400px;
-  height: auto; }
-  .card input {
-    width: 100%;
-    margin-bottom: 15px;
-    border: 1px solid #000000;
-    padding: 10px;
-    color: #000000; }
-  .card .btn-login {
-    width: 100%; }
+svg {
+  display: flex;
+  width: 100%; }
+
+.logoContainer {
+  width: -webkit-fill-available; }
+
+ 
+    /* CHART STYLE*/ 
+  #container{
+      display: flex;
+      width: 80%;
+      flex-flow: row wrap;
+      align-items: center;
+      margin: 0 auto;
+  }
+  .chartBox{
+      display: flex;
+      width: 50%;
+  }
+
 
 /*# sourceMappingURL=style.css.map */
