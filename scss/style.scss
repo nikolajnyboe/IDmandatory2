@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'buttons';
 @import 'utils';
 
 * {
@@ -9,11 +10,9 @@
 }
 
 body {
-	margin:0;
 	color: black;
 	font-family: 'Raleway';
 	background-color: $nordea-pink;
-	box-sizing: border-box;
 }
 
 svg {
@@ -56,32 +55,11 @@ input:focus {
 	height: 100px;
 }
 
-.btnMenuButton {
-	display: flex;
-	width: -webkit-fill-available;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-}
-
-.btnMenuButton:hover {
-	background-color: $nordea-blue;
-}
-
-.btnMenuSearchbar {
-	display: flex;
-	width: -webkit-fill-available;
-	align-items: center;
-	justify-content: center;
-}
-
 @import 'compare';
 
-.card-login {
-	background-color: $white;
-	padding: 25px;
-	border-radius: 8px;
+.card {
 	width: 400px;
+	height: auto;
 	input {
 		width: 100%;
 		margin-bottom: 15px;
@@ -89,10 +67,7 @@ input:focus {
 		padding: 10px;
 		color: $black;
 	}
-	button {
+	.btn-login {
 		width: 100%;
-		padding: 10px;
-		background-color: $nordea-blue;
-		color: $white;
 	}
 }
