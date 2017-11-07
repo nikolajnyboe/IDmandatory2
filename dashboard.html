@@ -8,5 +8,152 @@
 </head>
 <body>
 
+    <div id="container">
+        <div class="chartBox">
+            <canvas id="chartOne"></canvas>
+        </div>
+
+        <div class="chartBox">
+            <canvas id="chartTwo"></canvas>
+        </div>
+
+        <div class="chartBox">
+            <canvas id="chartThree"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var ctx = document.getElementById("chartOne").getContext('2d');
+        var chartOne = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Best Bussiness", "Econom Friendly", "Børsen", "Microtran"],
+                datasets: [{
+                    label: 'Total views on "article name"',
+                    data: [19, 32, 25, 23],
+                    backgroundColor: [
+                    'rgba(0,82,132,0.2)',
+                    'rgba(0,82,132,0.2)',
+                    'rgba(0,82,132,0.2)',
+                    'rgba(0,82,132,0.2)',
+                                ],
+                    borderColor: [
+                    'rgba(0,82,132,1)',
+                    'rgba(0,82,132,1)',
+                    'rgba(0,82,132,1)',
+                    'rgba(0,82,132,1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx = document.getElementById("chartTwo").getContext('2d');
+        var chartTwo = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+                datasets: [{
+                    label: 'clicks on "article name"',
+                    data: [42, 35, 21, 18, 38, 36],
+                    backgroundColor: [
+                        'rgba(0,82,132,0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(0,82,132,1)'
+                    ],
+                    borderWidth: 1,
+                    lineTension: 0
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx = document.getElementById("chartThree").getContext('2d');
+        var chartThree = new Chart(ctx, {
+            type: 'bubble',
+            data: {
+                labels: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+                datasets: [{
+                    label: 'clicks on "article name"',
+                    data: [
+                            {
+                                x: 42,
+                                y: 35,
+                                r: 10
+                            },
+                            {
+                                x: 20,
+                                y: 3,
+                                r: 10
+                            },
+                            {
+                                x: 45,
+                                y: 15,
+                                r: 15
+                            },
+                            {
+                                x: 33,
+                                y: 20,
+                                r: 10
+                            },
+                            {
+                                x: 27,
+                                y: 27,
+                                r: 10
+                            },
+                            {
+                                x: 30,
+                                y: 7,
+                                r: 10
+                            },
+                            {
+                                x: 40,
+                                y: 7,
+                                r: 10
+                            },
+                        ],
+                          
+                    backgroundColor: [
+                        'rgba(0,82,132,0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(0,82,132,1)'
+                    ],
+                    borderWidth: 1,
+                    pointStyle: "bubble", 
+
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
 </body>
 </html>
