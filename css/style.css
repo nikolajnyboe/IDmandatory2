@@ -195,4 +195,18 @@ input:focus {
   .card .btn-login {
     width: 100%; }
 
+ 
+    /* CHART STYLE*/ 
+  #container{
+      display: flex;
+      width: 100%;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  .chartBox{
+      display: grid;
+  }
+
+
 /*# sourceMappingURL=style.css.map */
