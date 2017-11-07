@@ -49,16 +49,14 @@
 .btn {
   padding: 10px;
   background-color: #0000A0;
-  color: #ffffff;
-  font-family: "NordeaSansSmall-Medium"; }
+  color: #ffffff; }
 
 .btnMenuButton {
   display: flex;
   width: -webkit-fill-available;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  font-family: "NordeaSansSmall-Medium"; }
+  cursor: pointer; }
 
 .btnMenuButton:hover {
   background-color: #0000A0; }
@@ -112,7 +110,7 @@ nav {
   align-items: center; }
 
 input {
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 5px; }
 
 input:focus {
@@ -185,22 +183,16 @@ input:focus {
   font-size: 1.5rem;
   color: #0000A0; }
 
-.card-login {
-  max-width: 400px;
+.card {
+  width: 400px;
   height: auto; }
-  .card-login input {
+  .card input {
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid #000000;
     padding: 10px;
     color: #000000; }
-    .card-login input::placeholder {
-      color: #000000;
-      font-family: "NordeaSansSmall-Regular"; }
-  .card-login .btn-login {
-    width: 100%;
-    margin-bottom: 25px; }
-    .card-login .btn-login:last-child {
-      margin-bottom: 0; }
+  .card .btn-login {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
