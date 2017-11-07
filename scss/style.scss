@@ -8,6 +8,16 @@ body {
 	background-color: $nordea-pink;
 }
 
+svg {
+	fill: currentColor;
+}
+
+.icon-outline {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+}
+
 nav {
 	margin: 0;
 	display: flex;
@@ -15,7 +25,7 @@ nav {
 	width:100%;
 	height:auto;
 	color: $white;
-	background-color:$nordea-blue;
+	background-color: $nordea-blue;
 }
 
 .wrapper {
@@ -26,7 +36,7 @@ nav {
 }
 
 input {
-	border-radius: 10px;
+	border-radius: 8px;
 	padding: 5px;
 }
 
@@ -38,19 +48,6 @@ input:focus {
 	height: 100px;
 }
 
+@import 'login';
 @import 'compare';
-
-.card {
-	width: 400px;
-	height: auto;
-	input {
-		width: 100%;
-		margin-bottom: 15px;
-		border: 1px solid $black;
-		padding: 10px;
-		color: $black;
-	}
-	.btn-login {
-		width: 100%;
-	}
-}
+@import 'dashboard';

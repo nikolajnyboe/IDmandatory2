@@ -2,6 +2,7 @@
     padding: 10px;
     background-color: $nordea-blue;
     color: $white;
+    font-family: "NordeaSansSmall-Medium";
 }
 
 .btnMenuButton {
@@ -9,11 +10,12 @@
 	width: -webkit-fill-available;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
+    cursor: pointer;
+    font-family: "NordeaSansSmall-Medium";
 }
 
 .btnMenuButton:hover {
-	background-color: $nordea-lightblue;
+	background-color: lighten($nordea-blue, 5%);
 }
 
 .btnMenuSearchbar {
