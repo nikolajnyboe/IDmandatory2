@@ -1,0 +1,27 @@
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  position: relative;
+  background-color: $white;
+  height: 300px;
+  border-radius: 11px;
+  box-shadow: 1px 2px 4px rgba($black, .3);
+  padding: 14px;
+}
+
+.pill {
+  position: absolute;
+  background-color: $nordea-lightblue;
+  color: $white;
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: .7rem;
+  top: 7px;
+  right: 5px;
+}
