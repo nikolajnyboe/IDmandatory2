@@ -7,15 +7,15 @@ svg {
     width: -webkit-fill-available;
 }
 
-    /* CHART STYLE*/ 
-    #container{
-        display: flex;
-        width: 80%;
-        flex-flow: row wrap;
-        align-items: center;
-        margin: 0 auto;
-    }
-    .chartBox{
-        display: flex;
-        width: 50%;
-    }
+/* CHART STYLE*/
+#container{
+    display: flex;
+    width: 80%;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+.chartBox{
+    display: flex;
+    width: 50%;
+}
