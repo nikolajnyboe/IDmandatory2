@@ -26,4 +26,5 @@ $card-gap: 10px;
     background-color: $white;
     margin: 0 $card-gap;
     margin-bottom: calc(2 * #{$card-gap});
+    animation: none;
 }
