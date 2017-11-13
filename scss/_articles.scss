@@ -2,3 +2,14 @@
     width:100%;
     border-top: 2px solid black;
 }
+
+.chartBox{
+    display: flex;
+    width: calc(50% - 2 * #{$card-gap});
+    background-color: $white;
+    border-radius: 11px;
+    box-shadow: 1px 2px 4px rgba($black, .3);
+    padding: 25px 14px;
+    margin: 0 $card-gap;
+    margin-bottom: calc(2 * #{$card-gap});
+}
