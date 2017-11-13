@@ -19,7 +19,7 @@
     margin: 0 auto;
 }
 
-$card-gap: 7.5px;
+$card-gap: 10px;
 .chartBox{
     display: flex;
     width: calc(50% - 2 * #{$card-gap});
