@@ -38,21 +38,25 @@
         var chartOne = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ["Best Bussiness", "Econom Friendly", "Børsen", "Microtran"],
+                labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
                 datasets: [{
-                    label: 'Total views on "article name',
-                    data: [19, 32, 25, 23],
+                    label: 'Active users',
+                    data: [19, 32, 25, 23, 33, 42],
                     backgroundColor: [
-                    'rgba(0,82,132,0.2)',
-                    'rgba(0,82,132,0.2)',
-                    'rgba(0,82,132,0.2)',
-                    'rgba(0,82,132,0.2)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)'
                                 ],
                     borderColor: [
-                    'rgba(0,82,132,1)',
-                    'rgba(0,82,132,1)',
-                    'rgba(0,82,132,1)',
-                    'rgba(0,82,132,1)'
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)'
                     ],
                     borderWidth: 1
                 }]
@@ -60,8 +64,12 @@
             options: {
                 title: {
                     display: true,
-                     text: 'Total views on "article name"',
-                     fontStyle: 'bold'
+                     text: 'Active users',
+                     fontFamily: "'NordeaSansSmall-Medium', 'Helvetica Neue, 'Arial', 'sans-serif'",
+                     responsive: true,
+                     showTooltips: false,
+                     fontSize: 24,
+                     fontColor: "#0000A0" 
                 },
                 scales: {
                     yAxes: [{
@@ -77,25 +85,29 @@
         var chartTwo = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+                labels: ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"],
                 datasets: [{
-                    label: 'clicks on "article name"',
+                    label: 'Total clicks on weekdays',
                     data: [42, 35, 21, 18, 38, 36],
                     backgroundColor: [
-                        'rgba(0,82,132,0.2)'
+                        'rgba(0,0,160,0.0)'
                     ],
                     borderColor: [
-                        'rgba(0,82,132,1)'
+                        'rgba(0,0,160,1)'
                     ],
-                    borderWidth: 1,
+                    borderWidth: 2,
                     lineTension: 0
                 }]
             },
             options: {
                 title: {
                     display: true,
-                     text: 'Total views on "article name"',
-                     fontStyle: 'bold'
+                     text: 'Total clicks on weekdays',
+                     fontFamily: "'NordeaSansSmall-Medium', 'Helvetica Neue, 'Arial', 'sans-serif'",
+                     responsive: true,
+                     showTooltips: false,
+                     fontSize: 24,
+                     fontColor: "#0000A0"
                 },
                 scales: {
                     yAxes: [{
@@ -111,9 +123,9 @@
         var chartThree = new Chart(ctx, {
             type: 'bubble',
             data: {
-                labels: ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+                labels: ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"],
                 datasets: [{
-                    label: 'clicks on "article name',
+                    label: 'Variation on click on weekdays',
                     data: [
                             {
                                 x: 42,
@@ -153,10 +165,10 @@
                         ],
 
                     backgroundColor: [
-                        'rgba(0,82,132,0.2)'
+                        'rgba(0,0,160,1)'
                     ],
                     borderColor: [
-                        'rgba(0,82,132,1)'
+                        'rgba(0,0,160,1)'
                     ],
                     borderWidth: 1,
                     pointStyle: "bubble",
@@ -166,8 +178,12 @@
             options: {
                 title: {
                     display: true,
-                     text: 'clicks on "article name"',
-                     fontStyle: 'bold'
+                     text: 'Variation on click on weekdays',
+                     fontFamily: "'NordeaSansSmall-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
+                     responsive: true,
+                     showTooltips: false,
+                     fontSize: 24,
+                     fontColor: "#0000A0"
                 },
                 scales: {
                     yAxes: [{
