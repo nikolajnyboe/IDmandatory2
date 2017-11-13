@@ -6,6 +6,13 @@
   h2 {
     margin-bottom: 1rem;
   }
+
+  @media (max-width:$breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width:$breakpoint-xs) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .latest-card {
