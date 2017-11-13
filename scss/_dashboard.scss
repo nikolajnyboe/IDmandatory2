@@ -11,15 +11,18 @@
 }
 
 /* CHART STYLE*/
-#container{
+.container-dashboard{
     display: flex;
-    width: 80%;
     flex-flow: row wrap;
     align-items: center;
     margin: 0 auto;
+<<<<<<< HEAD
     @media (max-width: $breakpoint-sm ){
         justify-content: center;
     }
+=======
+    padding-top: 0;
+>>>>>>> a84ba3c305bc1701c793523b5ba3a8ec1ba68770
 }
 
 .chartBox {
