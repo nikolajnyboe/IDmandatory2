@@ -3,7 +3,43 @@
     background-color: $nordea-blue;
     color: $white;
     font-family: "NordeaSansSmall-Medium";
-    font-size: 1rem;
+	font-size: 1rem;
+	border-style: none;
+	cursor: pointer;
+
+	&:focus,
+	&:hover,
+	&:active {
+		border-style: none;
+		outline: none;
+	}
+	
+	&Compare {
+		font-size: .8rem;
+		background: $nordea-lightblue;
+		padding: .5em 1em;
+		border-radius: 1rem;
+
+		&:focus,
+		&:hover {
+			background: darken($nordea-lightblue, 10%);
+		}
+		&:active {
+			background: darken($nordea-lightblue, 20%);
+		}
+
+		&.active {
+			background: $nordea-green;
+
+			&:focus,
+			&:hover {
+				background: darken($nordea-green, 10%);
+			}
+			&:active {
+				background: darken($nordea-green, 20%);
+			}
+		}
+	}
 }
 
 .btnMenuButton {

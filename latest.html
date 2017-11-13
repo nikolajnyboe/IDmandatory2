@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Latest</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Latest</h1>
+        <div class="latest-types-grid-container">
+            <div class="latest-row-container">
+                <h2>Articles</h2>
+                <div class="latest-card">
+                    <h3>Bonds: NETHER 10Y tap on 14 November</h3>
+                    <div class="latest-card__author">
+                        <img class="author-portrait" src="media/author-1.jpeg" alt="An author">
+                        <p class="author-text">Holger Sandte</p>
+                    </div>
+                    <button class="btn btnCompare"><span class="compare-icon">+</span>Compare</button>
+                </div>
+            </div>
+            <div class="latest-row-container">
+                <h2>Series</h2>
+                <div class="latest-card">
+                    <h3>Major Economies</h3>
+                    <button class="btn btnCompare"><span class="compare-icon">+</span>Compare</button>
+                </div>
+            </div>
+            <div class="latest-row-container">
+                <h2>Authors</h2>
+                <div class="latest-card">
+                    <h3>Piet P.H. Christiansen</h3>
+                    <div class="latest-card__author">
+                        <img class="author-portrait" src="media/author-3.jpeg" alt="An author">
+                    </div>
+                    <button class="btn btnCompare"><span class="compare-icon">+</span>Compare</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div> <!-- .container -->
+
+    <script>
+        var btnCompare = document.querySelectorAll('.btnCompare');
+
+        btnCompare.forEach(function(btn) {
+            this.activeState = false;
+            btn.addEventListener('click', function(){
+                this.activeState = !this.activeState;
+                this.classList.toggle('active');
+                var icon = this.querySelector('.compare-icon');
+                var iconContent = this.activeState ? "-" : "+";
+                icon.innerHTML = iconContent;
+            });
+        });
+    </script>
+
+
+</body>
+</html>
