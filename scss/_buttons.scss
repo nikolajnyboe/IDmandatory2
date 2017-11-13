@@ -48,7 +48,9 @@
 	align-items: center;
 	justify-content: center;
     cursor: pointer;
-    font-family: "NordeaSansSmall-Medium";
+	font-family: "NordeaSansSmall-Medium";
+	color: $white;
+	text-decoration: none;
 }
 
 .btnMenuButton:hover {
