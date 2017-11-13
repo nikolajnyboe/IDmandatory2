@@ -12,6 +12,8 @@
   padding: 25px 14px;
   color: $nordea-lightblue;
 
+  animation: fadeIn .5s ease;
+
   & > * {
     margin-bottom: 15px;
     font-family: NordeaSansSmall-Medium;
@@ -19,8 +21,6 @@
       margin-bottom: 0;
     }
   }
-
-
 
   h2 {
     color: $nordea-blue;
@@ -96,4 +96,15 @@
 .insights-container {
   max-width: 50rem;
   margin: 30px auto;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

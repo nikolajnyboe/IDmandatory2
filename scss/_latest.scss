@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .latest-card {
@@ -36,7 +40,7 @@
 .author-text {
   font-family: NordeaSansSmall-Regular;
   font-size: .8rem;
-  opacity: .5;
+  color: darken($white,40%);
 }
 
 .compare-icon {
