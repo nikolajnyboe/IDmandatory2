@@ -10,11 +10,17 @@
 
 .latest-card {
   position: relative;
+  margin-bottom: $card-gap;
 
   h3 {
     color: $nordea-blue;
     margin-bottom: 1rem;
     padding-right: 120px;
+  }
+
+  h4 span {
+    color: $nordea-blue;
+    display: block;
   }
 
   &__author {
