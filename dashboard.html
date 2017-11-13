@@ -41,7 +41,7 @@
             data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
                 datasets: [{
-                    label: 'Active users',
+                    label: false,
                     data: [19, 32, 25, 23, 33, 42],
                     backgroundColor: [
                     'rgba(0,0,160,1)',
@@ -63,14 +63,13 @@
                 }]
             },
             options: {
+                responsive: true,
                 title: {
                     display: true,
                      text: 'Active users',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
-                     responsive: true,
-                     showTooltips: false,
                      fontSize: 24,
-                     fontColor: "#0000A0" 
+                     fontColor: "#0000A0"
                 },
                 scales: {
                     yAxes: [{
@@ -91,7 +90,7 @@
                     label: 'Total clicks on weekdays',
                     data: [42, 35, 21, 18, 38, 36, 28],
                     backgroundColor: [
-                        'rgba(0,0,160,0.0)'
+                        'rgba(51,153,255,0.08)'
                     ],
                     borderColor: [
                         'rgba(0,0,160,1)'
@@ -101,12 +100,11 @@
                 }]
             },
             options: {
+                responsive: true,
                 title: {
                     display: true,
                      text: 'Total clicks on weekdays',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
-                     responsive: true,
-                     showTooltips: false,
                      fontSize: 24,
                      fontColor: "#0000A0"
                 },
@@ -141,7 +139,7 @@
                             {
                                 x: 45,
                                 y: 15,
-                                r: 15
+                                r: 10
                             },
                             {
                                 x: 33,
@@ -177,12 +175,11 @@
                 }]
             },
             options: {
+                responsive: true,
                 title: {
                     display: true,
-                     text: 'Variation on click on weekdays',
+                     text: 'Variation on click',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
-                     responsive: true,
-                     showTooltips: false,
                      fontSize: 24,
                      fontColor: "#0000A0"
                 },

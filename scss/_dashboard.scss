@@ -2,7 +2,7 @@
 
 .logoContainer {
     width: -webkit-fill-available;
-    
+
     svg {
         display: flex;
         width: 100%;
@@ -18,7 +18,15 @@
     align-items: center;
     margin: 0 auto;
 }
+
+$card-gap: 7.5px;
 .chartBox{
     display: flex;
-    width: 50%;
+    width: calc(50% - 2 * #{$card-gap});
+    background-color: $white;
+    border-radius: 11px;
+    box-shadow: 1px 2px 4px rgba($black, .3);
+    padding: 25px 14px;
+    margin: 0 $card-gap;
+    margin-bottom: calc(2 * #{$card-gap});
 }
