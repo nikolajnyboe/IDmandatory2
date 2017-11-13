@@ -20,7 +20,9 @@ svg {
 }
 
 .container {
-	padding: 30px 10%;
+	padding: 30px ($card-gap * 2);
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .hide {
