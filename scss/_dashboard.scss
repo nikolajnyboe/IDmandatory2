@@ -1,10 +1,13 @@
-svg {
-    display: flex;
-    width: 100%;
-  }
+
 
 .logoContainer {
     width: -webkit-fill-available;
+    
+    svg {
+        display: flex;
+        width: 100%;
+        max-width: 150px;
+    }
 }
 
 /* CHART STYLE*/
