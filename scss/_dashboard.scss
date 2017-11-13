@@ -17,6 +17,9 @@
     flex-flow: row wrap;
     align-items: center;
     margin: 0 auto;
+    @media (max-width: $breakpoint-sm ){
+        justify-content: center;
+    }
 }
 
 .chartBox {
@@ -33,4 +36,10 @@
     &:nth-child(even) {
         margin-right: 0;
     }
+    @media (max-width: $breakpoint-sm ){
+        width: calc(100% - 2 * #{$card-gap});
+        margin:10px 0;
+    }
 }
+
+
