@@ -20,11 +20,18 @@
 }
 
 $card-gap: 10px;
-.chartBox{
+.chartBox {
     display: flex;
     width: calc(50% - 2 * #{$card-gap});
     background-color: $white;
     margin: 0 $card-gap;
     margin-bottom: calc(2 * #{$card-gap});
     animation: none;
+
+    &:nth-child(odd) {
+        margin-left: 0;
+    }
+    &:nth-child(even) {
+        margin-right: 0;
+    }
 }
