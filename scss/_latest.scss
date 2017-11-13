@@ -1,7 +1,7 @@
 .latest-types-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 2 * $card-gap;
 
   h2 {
     margin-bottom: 1rem;
@@ -10,7 +10,7 @@
 
 .latest-card {
   position: relative;
-  margin-bottom: $card-gap;
+  margin-bottom: 2 * $card-gap;
 
   h3 {
     color: $nordea-blue;
@@ -26,6 +26,10 @@
   &__author {
     display: flex;
     align-items: center;
+
+    h3 {
+      margin-bottom: 0;
+    }
   }
 
   .btnCompare {
