@@ -31,6 +31,9 @@
         <div class="chartBox">
             <canvas id="chartThree"></canvas>
         </div>
+        <div class="chartBox">
+            <canvas id="chartFour"></canvas>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
@@ -41,7 +44,7 @@
             data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
                 datasets: [{
-                    label: false,
+                    label: "Monthly total reads",
                     data: [19, 32, 25, 23, 33, 42],
                     backgroundColor: [
                     'rgba(0,0,160,1)',
@@ -66,7 +69,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                     text: 'Active users',
+                     text: 'Monthly total reads',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
@@ -87,7 +90,7 @@
             data: {
                 labels: ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"],
                 datasets: [{
-                    label: 'Total clicks on weekdays',
+                    label: 'Click rate pr. day',
                     data: [42, 35, 21, 18, 38, 36],
                     backgroundColor: [
                         'rgba(51,153,255,0.08)'
@@ -103,7 +106,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                     text: 'Total clicks on weekdays',
+                     text: 'Click rate pr. day',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
@@ -124,7 +127,7 @@
             data: {
                 labels: ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"],
                 datasets: [{
-                    label: 'Variation on click on weekdays',
+                    label: 'Polished articles',
                     data: [
                             {
                                 x: 42,
@@ -178,7 +181,53 @@
                 responsive: true,
                 title: {
                     display: true,
-                     text: 'Variation on click',
+                     text: 'Polished articles',
+                     fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
+                     fontSize: 24,
+                     fontColor: "#0000A0"
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctx = document.getElementById("chartFour").getContext('2d');
+        var chartFour = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
+                datasets: [{
+                    label: "Polished articles",
+                    data: [19, 32, 25, 23, 33, 42],
+                    backgroundColor: [
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)'
+                                ],
+                    borderColor: [
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)',
+                    'rgba(0,0,160,1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                     display: true,
+                     text: 'Active users',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
