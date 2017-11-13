@@ -44,7 +44,7 @@
             data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
                 datasets: [{
-                    label: "Monthly total reads",
+                    label: "Total monthly reads",
                     data: [19, 32, 25, 23, 33, 42],
                     backgroundColor: [
                     'rgba(0,0,160,1)',
@@ -69,7 +69,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                     text: 'Monthly total reads',
+                     text: 'Total monthly reads',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
@@ -90,7 +90,7 @@
             data: {
                 labels: ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday", "Sunday"],
                 datasets: [{
-                    label: 'Total clicks on weekdays',
+                    label: 'Click rate per weekday',
                     data: [42, 35, 21, 18, 38, 36, 28],
                     backgroundColor: [
                         'rgba(51,153,255,0.08)'
@@ -106,7 +106,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                     text: 'Click rate pr. day',
+                     text: 'Click rate per weekday',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
@@ -125,44 +125,74 @@
         var chartThree = new Chart(ctx, {
             type: 'bubble',
             data: {
-                labels: ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"],
+                labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
                 datasets: [{
-                    label: 'Polished articles',
+                    label: 'Published articles per month',
                     data: [
                             {
-                                x: 42,
+                                x: 0,
+                                y: 18,
+                                r: 8
+                            },
+                            {
+                                x: 1,
+                                y: 22,
+                                r: 8
+                            },
+                            {
+                                x: 2,
+                                y: 25,
+                                r: 8
+                            },
+                            {
+                                x: 3,
+                                y: 23,
+                                r: 8
+                            },
+                            {
+                                x: 4,
+                                y: 28,
+                                r: 8
+                            },
+                            {
+                                x: 5,
+                                y: 13,
+                                r: 8
+                            },
+                            {
+                                x: 6,
+                                y: 18,
+                                r: 8
+                            },
+                            {
+                                x: 7,
+                                y: 30,
+                                r: 8
+                            },
+                            {
+                                x: 8,
+                                y: 25,
+                                r: 8
+                            },
+                            {
+                                x: 9,
+                                y: 33,
+                                r: 8
+                            },
+                            {
+                                x: 10,
                                 y: 35,
-                                r: 10
+                                r: 8
                             },
                             {
-                                x: 20,
-                                y: 3,
-                                r: 10
+                                x: 11,
+                                y: 32,
+                                r: 8
                             },
                             {
-                                x: 45,
-                                y: 15,
-                                r: 10
-                            },
-                            {
-                                x: 33,
-                                y: 20,
-                                r: 10
-                            },
-                            {
-                                x: 27,
-                                y: 27,
-                                r: 10
-                            },
-                            {
-                                x: 30,
-                                y: 7,
-                                r: 10
-                            },
-                            {
-                                x: 40,
-                                y: 7,
-                                r: 10
+                                x: 12,
+                                y: 30,
+                                r: 8
                             },
                         ],
 
@@ -181,7 +211,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                     text: 'Polished articles',
+                     text: 'Published articles per month',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
@@ -202,8 +232,8 @@
             data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun"],
                 datasets: [{
-                    label: "Polished articles",
-                    data: [19, 32, 25, 23, 33, 42],
+                    label: "New unique reads per month",
+                    data: [4, 12, 18, 23, 45, 78],
                     backgroundColor: [
                     'rgba(0,0,160,1)',
                     'rgba(0,0,160,1)',
@@ -227,7 +257,7 @@
                 responsive: true,
                 title: {
                      display: true,
-                     text: 'Active users',
+                     text: 'New unique reads per month',
                      fontFamily: "'NordeaSansLarge-Bold', 'Helvetica Neue, 'Arial', 'sans-serif'",
                      fontSize: 24,
                      fontColor: "#0000A0"
